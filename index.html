@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Assignment 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <span class="logo">
+    <img src="amazon-logo-editorial-icon-isolated-600nw-2333488123.webp" alt="Amazon Logo">
+</span>
+            <div class="location">📍 Deliver to Pakistan</div>
+        </div>
+        <div class="header-search">
+            <input type="text" id="searchInput" placeholder="Search Amazon.com">
+            <button id="searchBtn">🔍</button>
+        </div>
+        <div class="header-right">
+            <div class="nav-item">
+                <span class="nav-line-1">Hello, Sign in</span>
+                <span class="nav-line-2">Account & Lists</span>
+            </div>
+            <div class="nav-item">
+                <span class="nav-line-1">Returns</span>
+                <span class="nav-line-2">& Orders</span>
+            </div>
+            <div class="nav-cart" id="openCart">
+                <div class="cart-icon-container">
+                    <span id="cartCount">0</span> 🛒
+                </div>
+                <span class="nav-line-2">Cart</span>
+            </div>
+        </div>
+    </header>
+
+    <nav id="navBar">
+        <span class="category" data-cat="All">All</span>
+        <span class="category" data-cat="Electronics">Electronics</span>
+        <span class="category" data-cat="Books">Books</span>
+        <span class="category" data-cat="Fashion">Fashion</span>
+        <span class="category" data-cat="Home & Garden">Home & Garden</span>
+        <span class="category" data-cat="Today's Deals">Today's Deals</span>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to Amazon</h1>
+            <p>Discover millions of products at great prices. Fast delivery and easy returns.</p>
+        </div>
+        <img src="amazon-logo-editorial-icon-isolated-600nw-2333488123.webp" alt="Amazon Products" class="hero-img">
+    </section>
+
+    <main>
+        <section id="productListing">
+            <h2 class="section-title">Featured Products</h2>
+            <div id="productGrid" class="grid"></div>
+        </section>
+
+        <section id="productDetail" style="display: none;">
+            <button id="backBtn">← Back to Shopping</button>
+            <div id="detailContent"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-column">
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li>Careers</li>
+                    <li>Blog</li>
+                    <li>About Amazon</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Make Money with Us</h4>
+                <ul>
+                    <li>Sell on Amazon</li>
+                    <li>Become an Affiliate</li>
+                    <li>Advertise Your Products</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Payment Products</h4>
+                <ul>
+                    <li>Amazon Business Card</li>
+                    <li>Shop with Points</li>
+                    <li>Reload Your Balance</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <p>Conditions of Use | Privacy Notice | Your Ads Privacy Choices</p>
+            <p>&copy; 1996-2026, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+
+    <div id="cartSidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Shopping Cart</h3>
+            <button id="closeCart">&times;</button>
+        </div>
+        <div id="cartItems"></div>
+        <div class="cart-summary">
+            <div class="summary-line"><span>Subtotal:</span> <span id="subtotal">$0.00</span></div>
+            <div class="summary-line"><span>Total (with tax):</span> <strong id="total">$0.00</strong></div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
